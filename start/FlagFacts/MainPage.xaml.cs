@@ -35,6 +35,22 @@ namespace FlagFacts
             //country.SelectedItem = CurrentFlag.Country;
             //country.SelectedIndexChanged += (s, e) => CurrentFlag.Country = repository.Countries[country.SelectedIndex];
 
+            /**
+            country.BindingContext = CurrentFlag;
+            country.SetBinding(Picker.SelectedItemProperty, new Binding(nameof(CurrentFlag.Country)));
+
+
+            1. ¿Qué afirmación es cierta sobre el objeto de origen de un enlace de Xamarin.Forms?
+            Puede ser de cualquier tipo.
+
+            2. ¿Qué afirmación es cierta sobre la propiedad de destino de un enlace de Xamarin.Forms?
+            Debe ser una propiedad BindableProperty.
+
+            3. Si en todos los enlaces de los controles de un elemento StackLayout se usa el mismo objeto de origen, ¿cuál es la estrategia más segura para establecer el objeto de origen una sola vez?
+            Establecer la propiedad BindingContext del objeto StackLayout.
+
+            **/
+
             flagImage.Source = CurrentFlag.GetImageSource();
 
             //adopted.Date = CurrentFlag.DateAdopted;
