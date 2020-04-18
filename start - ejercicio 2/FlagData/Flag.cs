@@ -56,4 +56,16 @@ namespace FlagData
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
+
+
+    /**
+     * 
+     * 1. Imagine que tiene una página con un elemento Entry y un elemento Label. La etiqueta muestra una lista de países. Cuando el usuario escribe en el campo de entrada, la lista de etiquetas se filtra exclusivamente por los elementos que coinciden. Por ejemplo, si el usuario escribe "Aus", la lista solo muestra "Australia" y "Austria". El elemento BindingContext de la página está establecido en una instancia de CountrySearchData. Entry.Text tiene un enlace a la propiedad de cadena CountrySearchData.CountryFilter. De estas técnicas, ¿cuál es probablemente más necesaria para que el enlace funcione de la forma descrita?
+     * Un enlace bidireccional.
+     * 
+     * 2. ¿Qué comportamiento habilita la implementación de INotifyPropertyChanged en los objetos de datos?
+     * Actualizaciones de la interfaz de usuario cuando cambian los datos de código subyacente.
+     * 
+     */
+
 }
