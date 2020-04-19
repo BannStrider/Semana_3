@@ -33,3 +33,11 @@
 > Enlace: https://docs.microsoft.com/es-es/learn/modules/display-collections-in-xamarin-forms-apps-with-listview/6-exercise-customize-row-using-built-in-cell-types
 
 > Commit: https://github.com/BannStrider/Semana_3/commit/cb82c737a88407d74507ba7f0ab128c6aeca6862
+
+## Consumo de servicios web REST en aplicaciones de Xamarin
+
+#### **1.- Ejercicio: Consumo de un servicio REST con HttpClient**
+
+> Enlace: https://docs.microsoft.com/es-es/learn/modules/consume-rest-services/4-exercise-consume-rest-service-with-httpclient
+
+> Commit: 
