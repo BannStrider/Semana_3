@@ -40,4 +40,4 @@
 
 > Enlace: https://docs.microsoft.com/es-es/learn/modules/consume-rest-services/4-exercise-consume-rest-service-with-httpclient
 
-> Commit: 
+> Commit: https://github.com/BannStrider/Semana_3/commit/74b613626575213c5005b24920712b422517d79f
