@@ -4,6 +4,23 @@
              Title="Fun with Flags"
              x:Class="FlagFacts.AllFlagsPage">
 
-    <ListView ItemsSource="{Binding Flags}" SelectedItem="{Binding CurrentFlag, Mode=TwoWay}" ItemTapped="ListView_ItemTapped" />
+    <ListView ItemsSource="{Binding Flags}" SelectedItem="{Binding CurrentFlag, Mode=TwoWay}" ItemTapped="ListView_ItemTapped">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ImageCell DetailColor="Gray" Text="{Binding Country}" Detail="{Binding DateAdopted, StringFormat='Adopted on {0:d}'}" ImageSource="{Binding ImageUrl, Converter={StaticResource irConverter}}"/>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    
+    <!--
+    1. ¿Cómo se agrega un nuevo elemento a un control ListView de forma dinámica?
+
+    Se agrega el nuevo elemento a la colección que se ha asignado a la propiedad ItemsSource.
+
+    
+    2. ¿Qué interfaz implementa ObservableCollection?
+
+    INotifyCollectionChanged
+    -->
 
 </ContentPage>

@@ -16,13 +16,6 @@
                      Clicked="OnShow" Icon="ic_action_search.png" />
     </ContentPage.ToolbarItems>
 
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <cvt:EmbeddedImageConverter x:Key="irConverter" 
-                    ResolvingAssemblyType="{x:Type data:Flag}" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
-
     <ScrollView>
         <StackLayout Spacing="10">
             <StackLayout.Padding>
